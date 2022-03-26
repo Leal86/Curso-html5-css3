@@ -25,46 +25,32 @@ html, body {
 
 header {
     background-color: black;
-}
-
-header > h1 {
-    margin: 0px;
-    padding-top: 50px;
-    font-size: 9.6vw;
     color: white;
-    font-family: var(--fonte2);
     text-align: center;
 }
 
-header > h1 > span {
-    font-size: 75%;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; 
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
     color: white;
-    text-align: center;
     font-family: var(--fonte1);
-    font-size: 16px;
-    margin: 0px;
-    padding: 0px 0px 50px 0px;
+    padding-bottom: 50px;
+    
 }
 
-header > p > a {
+header a, footer a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
-    font-weight: 700;
+    font-weight: bolder;
 }
 
-header > p > a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
-    color: white;
-    font-size: 1em;
-}
-
-main > section > p > pre{
-    font-size: 1em;
-    font-family: var(--fonte3);
 }
 
 section {
@@ -85,52 +71,34 @@ section.normal {
     color: black;
 }
 
-section.sec-imagem1{
-    background: yellowgreen url('imagens/background001.jpg') right center no-repeat fixed;
-    background-size: cover;
-   
-}
-
-section > p.texto2 {
-    background-color: rgba(0, 0, 0, 0.514);
-    width: 45%;
-    font-size: 3.5vw;
+section.imagem{
+    background-color: rgb(58, 58, 58);
     color: white;
-    padding: 3px;
-}
-
-section.sec-imagem2{
-    background: yellowgreen url('imagens/background002.jpg') left top no-repeat fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
     background-size: cover;
-   
+    background-attachment: fixed;
 }
 
-section > p.texto3 {
-    background-color: rgba(0, 0, 0, 0.425);
-    width: 44%;
-    color: white;
-    padding: 7px 0px 7px 7px;
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.664);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('imagens/background002.jpg');
 }
 
 footer {
     background-color: black;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-}
-
-footer > p {
     color: white;
     text-align: center;
-}
-
-footer > p > a{
-    text-decoration: none;
-    color: white;
-    font-family: var(--fonte1);
-    font-weight: 900;
-}
-
-footer > p > a:hover {
-    text-decoration: underline;
-    
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
